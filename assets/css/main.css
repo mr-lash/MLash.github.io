@@ -56,7 +56,7 @@ body {
 }
 
 mark {
-	background-color: transparent;
+	background-color: transparent; 
 	color: inherit;
 }
 
@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: #fff; /*  */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #888;
+		color: rgb(0, 0, 0); /* este es el color general */
 		font-family: "Lato", sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -117,7 +117,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #4acaa8 !important;
+			color: #073126 !important; 
 		}
 
 	strong, b {
@@ -134,7 +134,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #777;
+		color: #4acaa8; /* los títulos de los menús (skills, projects, etc) */
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
@@ -1785,16 +1785,16 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #4acaa8;
-		font-size: 3.5em;
-	}
+		color: #12644E;
+		font-size: 2.5em; 
+	} /* Aquí es donde pone Marcos Lasheras Portfolio */
 
 		header.major h2 + p {
 			color: #777;
-			font-size: 1.75em;
+			font-size: 1.32em;
 			font-weight: 700;
 			margin-top: -0.75em;
-		}
+		} /* Aquí es donde pone Data Analyst... */
 
 /* Form */
 
@@ -1848,7 +1848,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4acaa8;
+			border-color: #073126;
 		}
 
 	select {
@@ -1863,7 +1863,7 @@ input, select, textarea {
 
 		select option {
 			color: #777;
-			background: #fff;
+			background: #fff; 
 		}
 
 		select:focus::-ms-value {
@@ -1953,7 +1953,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #4acaa8;
+			border-color: #073126;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2064,8 +2064,8 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			left: 0;
-			width: 100%;
-			height: 100%;
+			width: 100%; /* la amplitud del banner de arriba del todo */
+			height: 94%; /* la altura del banner de arriba del todo */
 		}
 
 		.image[data-position="top left"] img {
@@ -2402,7 +2402,7 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #4acaa8;
+				background: #12644E;
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2618,7 +2618,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #4acaa8;
+			background-color: #12644E; /* botón send message */
 			color: #ffffff !important;
 		}
 
@@ -2626,7 +2626,7 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #5ed0b1;
+				background-color: #4acaa8; /* color secundario del botón */
 			}
 
 			input[type="submit"].primary:active,
@@ -2667,13 +2667,13 @@ input, select, textarea {
 			display: inline-block;
 			padding-right: 2.5em;
 			vertical-align: middle;
-			width: 48%;
+			width: 25%; /* altura de las imagenes que están al lado de la descripción de los proyectos*/
 		}
 
 			.features article .image img {
 				display: block;
 				width: 100%;
-			}
+			} /*  */
 
 		.features article .inner {
 			display: inline-block;
@@ -2700,7 +2700,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #4acaa8;
+		background: #12644E; /* este es el color del menú de la derecha */
 		color: #d2f2e9;
 		height: 100%;
 		overflow-y: auto;
@@ -2716,7 +2716,7 @@ input, select, textarea {
 		}
 
 			#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
-				color: #ffffff;
+				color: #ffffff; /* aquí pone Marcos Lasheras en el menú derecho */
 			}
 
 		#header header p {
@@ -2751,7 +2751,7 @@ input, select, textarea {
 			}
 
 			#header > header p {
-				color: #d2f2e9;
+				color: #4acaa8; /* Aquí es donde pone Brussels,Belgium */
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2772,7 +2772,7 @@ input, select, textarea {
 			}
 
 				#header > footer .icons li a {
-					color: #b7eadc;
+					color: #b7eadc; /* iconos de LinkedIn y Github */
 				}
 
 		#header > nav {
@@ -2789,7 +2789,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #5ccfb1;
+					border-top: solid 2px #4acaa8; /* las líneas que separan las secciones en el menu de la derecha */
 					display: block;
 					padding: 0;
 				}
@@ -2800,15 +2800,15 @@ input, select, textarea {
 						-ms-transition: none;
 						transition: none;
 						border: 0;
-						color: #ffffff !important;
+						color: #ffffff !important; /*  */
 						display: block;
 						padding: 0.85em 0;
 						text-decoration: none;
 					}
 
 						#header > nav ul li a.active {
-							background: #fff;
-							color: #4acaa8 !important;
+							background: rgb(200, 200, 200); /* el color que se queda en el menu de la derecha */
+							color: #12644E !important;
 						}
 
 					#header > nav ul li:first-child {
@@ -2818,7 +2818,7 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		background: #fff;
+		background: #fff; /* este es el color de fondo principal */
 		padding-right: 23em;
 	}
 
@@ -2877,7 +2877,7 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 13pt;
+				font-size: 15pt; /* esta es la parte donde hablo un poco de mi */
 			}
 
 		/* Header */
@@ -3076,7 +3076,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #4acaa8;
+						background: #12644E;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
