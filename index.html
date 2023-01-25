@@ -83,7 +83,7 @@
 							<section id="three">
 								<div class="container">
 									<h3>Projects</h3>
-									<p>In this section, I'll show up some projects.</p>
+									<p></p>
 									<div class="features">
 										<article>
 											<a href="https://github.com/mr-lash/IBM-Data-Analyst-Capstone-Project" class="image"><img src="images/trends.jpg" alt="" /></a>
@@ -156,7 +156,7 @@
 								<div class="container">
 									<h3>Contact</h3>
 									<p></p>
-									<form method="post" action="#">
+									<form onsubmit="sendEmail(); reset(); return false;">
 										<div class="row gtr-uniform">
 											<div class="col-16 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
 											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
@@ -171,6 +171,24 @@
 										</div>
 									</form>
 								</div>
+								<script src="https://smtpjs.com/v3/smtp.js"></script>
+								<script>
+									function sendEmail(){
+										Email.send({
+											SecureToken: "843d56d5-0874-4cb8-8dca-76bb2ae30d4d",
+											To : 'mlash90@gmail.com',
+											From : document.getElementById("email").value,
+											Subject : "New Contact Form Enquiry",
+											Body : "Name: " + document.getElementById("name").value
+												+ "<br> Email: " + document.getElementById("email").value
+												+ "<br> Subject: " + document.getElementById("subject").value
+												+ "<br> Message: " + document.getElementById("message").value
+											}).then(
+											message => alert(message)
+											);
+									}
+								</script>
+								
 							</section>
 						
 						<!-- Five -->
